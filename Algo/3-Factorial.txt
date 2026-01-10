@@ -1,0 +1,22 @@
+START
+    INPUT n
+
+    IF n < 0 THEN
+        OUTPUT "Invalid input, Please enter a non negative integer."
+    ENDIF
+
+    IF n = 0 OR n = 1 THEN
+        Set factorial to 1
+        OUTPUT "The factorial of " + n + " is: " + factorial
+    ENDIF
+
+    SET factorial to 1
+    SET index to 2
+
+    WHILE index ≤ n DO
+        factorial = factorial * i
+        index = index + 1
+    ENDWHILE
+
+    OUTPUT "The factorial of " + n + " is: " + factorial
+END

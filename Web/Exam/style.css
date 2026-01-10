@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS", "Segoe Print", "Segoe UI", Arial, sans-serif;
+}
+.containor {
+  margin: 50px;
+}
+
+header,
+.hero,
+button,
+.card-content,
+.client-card,
+footer {
+  border: 2px solid black;
+}
+
+header,
+.hero,
+h2,
+.services,
+.clients {
+  margin: 0 0 20px 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.left-header,
+.right-header {
+  display: flex;
+  align-items: center;
+}
+.header-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.site-name {
+  font-weight: bold;
+  font-size: 25px;
+}
+.site-bio span {
+  color: #689eea;
+}
+.right-header,
+nav ul {
+  gap: 18px;
+}
+nav ul,
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.active {
+  color: #689eea;
+}
+
+button {
+  color: white;
+  background-color: #2a78e3;
+  padding: 5px;
+  margin: 0 18px 0 0;
+  box-shadow: 2px 2px 0px black;
+}
+
+.hero,
+.client-card,
+footer {
+  display: flex;
+  background-color: #b7d4fa;
+}
+.hero-text {
+  padding: 50px 50px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 span:first-child {
+  display: block;
+  text-align: left;
+}
+h1 span:last-child {
+  display: block;
+  text-align: right;
+}
+.showbtn {
+  padding: 5px 20px;
+  margin: 30px auto;
+  width: fit-content;
+}
+
+.hero img {
+  margin: auto;
+  width: 50%;
+}
+h2 {
+  color: #5791df;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  width: calc((100% - 60px) / 3);
+}
+
+.card-content {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  text-align: center;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.card-content img {
+  width: 100px;
+}
+
+.bookbtn,
+.readMorebtn {
+  padding: 5px 20px;
+}
+
+.client-card {
+  padding: 20px;
+}
+
+.client-card img {
+  width: 200px;
+}
+.client-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.client-info p {
+  font-size: 18px;
+}
+.client-info button {
+  align-self: flex-end;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+svg {
+  width: 32px;
+  fill: #2b78e4;
+}

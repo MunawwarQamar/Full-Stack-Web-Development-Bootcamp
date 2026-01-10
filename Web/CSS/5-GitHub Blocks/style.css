@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #eaebff;
+}
+
+h1 {
+    margin:20px;
+    color: #3a4d55;
+}
+img.octocat {
+    height: 200px;
+}
+
+div{
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.blue-div{
+    background-color: #5ac6e2; 
+}
+.pink-div{
+    background-color: #cba6ad;
+    justify-content: space-around;
+}
+.white-div{
+    background-color: #fcfcff;
+}
+.reference{
+    margin: 20px 0 ;
+    color: #555; 
+}
+.reference a{
+    color: #337ab7;
+}

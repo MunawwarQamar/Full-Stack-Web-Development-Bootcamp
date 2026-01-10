@@ -1,0 +1,18 @@
+START
+    INPUT number
+
+    IF number ≤ 0 THEN
+        OUTPUT "Please enter a positive integer."
+        STOP
+    ENDIF
+
+    Set sum to 0
+    Set index to 1
+
+    WHILE index ≤ number DO
+        sum = sum + index
+        index = index + 1
+    ENDWHILE
+
+    OUTPUT "The sum of integers from 1 to " + number + " is: " + sum
+END

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.containor{
+    width: 900px;
+    margin: 0 auto;              
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;            
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+    font-weight: bold;
+}
+
+.header button{
+    padding: 8px 16px;
+    background-color:#17a2b8;
+    color: white;
+    border: none;
+}
+.sub-containor{
+    border: 2px solid #cfcfcf;
+    background: #fff;
+    position: relative;
+    margin:0 0 20px 0;  
+    padding: 0;
+}
+
+.top{
+    height: 90px;
+    background: #17a2b8;
+}
+
+.user-photo{
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+}
+
+.user-info{
+    padding: 35px 30px 25px;
+    margin: 20px 0 0 0 ; 
+}
+
+.user-info h1{
+    margin: 0 0 12px 0;
+}
+.location{
+    margin:0 0 16px 0;
+}
+.icon{
+    width: 16px;
+}
+.edit-profile{
+    color: #0b66c3;
+}
+.wrapper{
+    width: 900px;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+}
+.left-col{
+    flex: 2;
+}
+
+.right-col{
+    flex: 1;
+}
+h3{
+    background-color: rgb(75, 75, 75);
+    color: white;
+    padding: 8px 16px;
+}
+.edu-info{
+    padding: 16px 16px;
+}
+
+.edu-info p{
+    margin: 8px 0px ;
+}
+.edu-info span{
+    color: grey;
+}
+h3 span{
+    background-color: grey;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+}
+
+.avatar-sm{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.action img{
+    width: 25px;
+    height: 25px;
+}
+.action{
+    margin: 0 0 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.view-more{
+    display: block;
+    padding: 12px 16px;
+    color: #0b66c3;
+    text-decoration: underline;
+    border-top: 2px solid #cfcfcf;
+}

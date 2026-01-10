@@ -1,0 +1,8 @@
+START 
+    INPUT number1
+    INPUT number2
+    INPUT number3
+    Set sum to number1 + number2 + number3
+    Set average to sum / 3
+    OUTPUT average
+END

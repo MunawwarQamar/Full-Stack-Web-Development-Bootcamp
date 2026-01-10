@@ -1,0 +1,6 @@
+Start 
+    INPUT Length
+    INPUT Width
+    Set Area to Length * Width
+    OUTPUT Area 
+END
