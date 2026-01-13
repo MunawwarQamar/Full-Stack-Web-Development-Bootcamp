@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  padding: 50px;
+}
+
+.card {
+  width: 600px;
+  background: white;
+  border: 3px solid black;
+  padding: 25px;
+  
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.top h2 {
+  flex: 1;
+}
+
+button {
+  background: #f6d44b;
+  border: 2px solid black;
+  padding: 8px 18px;
+  box-shadow: 2px 2px 0 black;
+  font-weight: bold;
+  cursor: pointer;
+}
