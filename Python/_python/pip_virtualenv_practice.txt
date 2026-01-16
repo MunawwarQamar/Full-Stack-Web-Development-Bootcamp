@@ -1,0 +1,117 @@
+Assignment: Practice using pip in a virtual environment
+
+1) pip list
+What I did:
+- I activated my virtual environment first (I could tell it was active because the environment name appeared in the terminal prompt like: (py3Env)).
+
+What this command does:
+- pip list shows all Python packages installed in the currently active environment, along with their versions.
+
+What I observed:
+- The output was a list of installed packages inside the virtual environment.
+
+What I understood:
+- When the virtual environment is active, pip works only inside it, so the package list belongs to that environment (not the whole computer).
+
+
+2) deactivate
+What this command does:
+- deactivate exits (turns off) the virtual environment.
+
+What I observed:
+- After running it, the (py3Env) label disappeared from the terminal prompt.
+- This means I returned to the global/system Python environment.
+
+
+3) pip3 list
+What this command does:
+- pip3 list lists packages for Python 3 in the current (now global/system) environment.
+
+What I observed:
+- The list was different from the one inside the virtual environment.
+
+Difference compared to pip list (when venv was active):
+- pip list (inside venv): shows packages installed in the virtual environment only.
+- pip3 list (after deactivate): shows packages installed globally for Python 3 (system-wide).
+- If the results look the same, it may mean the virtual environment was not actually active before, or pip was pointing to the global Python.
+
+
+4) source myEnvironments/py3Env/bin/activate
+What this command does:
+- This re-activates the virtual environment so that python and pip point to the environment’s interpreter and packages.
+
+What I observed:
+- (py3Env) appeared again in the terminal prompt, confirming the virtual environment is active.
+
+
+5) pip install Django==2.2.4
+What this command does:
+- Installs Django with a specific version (2.2.4) inside the active virtual environment.
+
+What I observed in the terminal:
+- The terminal showed messages about downloading and installing packages.
+- It ended with something like “Successfully installed …” and possibly installed dependencies too.
+
+What I understood:
+- Using == locks the package to an exact version, which helps avoid version conflicts and keeps the project consistent.
+
+
+6) pip freeze
+What this command does:
+- pip freeze outputs installed packages in a format suitable for a requirements file.
+
+Difference between pip freeze and pip list:
+- pip list: shows a readable table of packages and versions.
+- pip freeze: prints packages in the exact “requirements” format (e.g., Django==2.2.4), which is used to reproduce the same environment on another machine.
+
+
+7) cd ~/Desktop
+What this command does:
+- Changes the current directory to the Desktop, so the next file we create will be saved there.
+
+
+8) pip freeze > requirements.txt
+What this command does:
+- Redirects the output of pip freeze into a file named requirements.txt.
+
+What I observed:
+- After running it, a requirements.txt file was created on the Desktop.
+
+9) ls
+What this command does:
+- Lists the files and folders in the current directory.
+
+What I observed:
+- I could see requirements.txt listed in the Desktop directory.
+
+What is inside requirements.txt:
+- A list of installed packages and their versions in the format:
+  package_name==version
+
+
+Why it is useful:
+- It allows someone else (or me later) to install the same dependencies using:
+  pip install -r requirements.txt
+
+
+10) pip uninstall Django
+What this command does:
+- Removes Django from the active virtual environment.
+
+What I observed:
+- It asked for confirmation and after agreeing, it uninstalled Django successfully.
+
+What I understood:
+- Uninstall removes the package only from the current environment (here: the virtual environment), not from the entire system.
+
+
+11) pip show Django
+What this command does:
+- Displays detailed information about a specific package (name, version, location, dependencies, etc.).
+
+What I observed:
+- Since I uninstalled Django, pip show Django should display nothing or a message like “Package(s) not found: Django”.
+
+Conclusion:
+- I learned how to list packages, install specific versions, export dependencies to requirements.txt, and uninstall packages inside a virtual environment.
+- I also learned the importance of activating/deactivating the virtual environment because it changes where packages are installed and listed.
